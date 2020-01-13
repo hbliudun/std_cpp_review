@@ -27,6 +27,11 @@ public:
 		return old;
 	}
 
+	//	<<
+	friend ostream& operator<<(ostream& os, const CInteger& data);
+
+	//  >>
+	friend istream& operator>>(istream& is, CInteger& data);
 private:
 	int m_i;
 };

@@ -4,6 +4,8 @@ using namespace std;
 #include<string>
 #include"Complex.h"
 #include"Integer.h"
+#include"Hungry.h"
+#include"Lazy.h"
 
 
 // explicit
@@ -66,6 +68,9 @@ public:
 	string m_name;
 };
 
+CHungry CHungry::s_instance(123);
+CLazy* CLazy::s_instance = NULL;
+int CLazy::s_counter = 0;
 
 int main()
 {
@@ -167,6 +172,40 @@ int main()
 		c1.print();
 
 	}
+	//  <<   >>
+	{
+		//CInteger c;
+		//cin >> c;
+		//cout << c << endl;
+	}
+	// 懒汉模式
+	{
+
+	}
+	// 饿汉模式
+	{
+		CHungry& a1 = CHungry::getInstance();
+		CHungry& a2 = CHungry::getInstance();
+
+		cout << &a1 << "," << &a2 << endl;
+	}
+	//懒汉模式
+	{
+		CLazy& l1 = CLazy::getInstance();
+		CLazy& l2 = CLazy::getInstance();
+
+		cout << &l1 << "," << &l2 << endl;
+		l1.release();
+		l1.release();
+	}
+
+
+
+
+
+
+
+
 
 
 	return 0;

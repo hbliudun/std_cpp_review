@@ -17,3 +17,15 @@ CInteger & operator++(CInteger& i, int)
 	// 返回+1前的原数据
 	return old;
 }
+
+ostream & operator<<(ostream & os, const CInteger & data)
+{
+	// TODO: 在此处插入 return 语句
+	return os << data.m_i;
+}
+
+istream & operator>>(istream & is, CInteger & data)
+{
+	// TODO: 在此处插入 return 语句
+	return is >> data.m_i;
+}

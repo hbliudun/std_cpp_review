@@ -24,12 +24,24 @@
     <ClCompile Include="Integer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Hungry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Lazy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Complex.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Integer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Hungry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Lazy.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
